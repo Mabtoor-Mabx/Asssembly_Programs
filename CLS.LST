@@ -1,0 +1,68 @@
+Microsoft (R) Macro Assembler Version 5.00                  1/25/21 11:16:24
+                                                             Page     1-1
+
+
+       1				; _____THIS IS OUR PREPROCESSOR DIRECTI
+					VES____ 
+       2				dosseg  
+       3				.model small 
+       4 0100				.stack 100h 
+       5 0000				.data  
+       6 0000				.code  
+       7				 
+       8				;______ MAIN FUNCTION ______ 
+       9 0000				main proc 
+      10				 
+      11				; ______CODE STARTS HERE ______ 
+      12 0000  B4 02			mov ah , 2 
+      13 0002  B2 48			mov dl, 'H' 
+      14 0004  CD 21			int 21h 
+      15 0006  B2 45			mov dl,'E' 
+      16 0008  CD 21			int 21h 
+      17 000A  B2 4C			mov dl,'L' 
+      18 000C  CD 21			int 21h 
+      19 000E  B2 4C			mov dl, 'L' 
+      20 0010  CD 21			int 21h 
+      21 0012  B2 4F			mov dl, 'O' 
+      22 0014  CD 21			int 21h 
+      23				;______ LINES USED TO END THE CODE ____
+					__ 
+      24 0016  B4 4C			mov ah, 4ch 
+      25 0018  CD 21			int 21h 
+      26				; ______END THE MAIN FUNCTION______ 
+      27 001A				main endp 
+      28				;______END THE PROGRAM______ 
+      29 001A				end main 
+Microsoft (R) Macro Assembler Version 5.00                  1/25/21 11:16:24
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+DGROUP . . . . . . . . . . . . .  	GROUP
+  _DATA  . . . . . . . . . . . .  	0000	WORD	PUBLIC	'DATA'
+  STACK  . . . . . . . . . . . .  	0100	PARA	STACK	'STACK'
+_TEXT  . . . . . . . . . . . . .  	001A	WORD	PUBLIC	'CODE'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+MAIN . . . . . . . . . . . . . .  	N PROC	0000	_TEXT	Length = 001A
+
+@CODE  . . . . . . . . . . . . .  	TEXT  _TEXT		
+@CODESIZE  . . . . . . . . . . .  	TEXT  0		
+@DATASIZE  . . . . . . . . . . .  	TEXT  0		
+@FILENAME  . . . . . . . . . . .  	TEXT  hello		
+
+
+     29 Source  Lines
+     29 Total   Lines
+     15 Symbols
+
+  50632 + 465912 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
